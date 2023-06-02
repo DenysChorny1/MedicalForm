@@ -62,7 +62,6 @@ const DoctorSelect: React.FC<DoctorSelectProps> = ({ control,
         specialityId: selectedDoctor.specialityId,
         cityId: selectedDoctor.cityId,
       };
-      console.log(doctorInfo)
       onDoctorInfoChange(doctorInfo);
     }
   };
