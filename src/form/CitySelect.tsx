@@ -62,8 +62,9 @@ const CitySelect: React.FC<CitySelectProps> = ({ control, cityDoctorId, onCityCh
     <>
       <select
         {...control.register('city', { required: 'City is required!',
+        validate: (value) => value !== 'Select city' || 'City is required!',
         pattern: {
-          value: /^(?!Select city$)[A-Za-z]+$/,
+          value: /^[A-Za-z]+$/,
           message: 'City is required!',
         },
       })}
