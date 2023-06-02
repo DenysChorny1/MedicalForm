@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import { SubmitHandler, useForm, Control } from 'react-hook-form';
+import React, {useState} from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { IMedicField } from './app.types';
 import NameInput from './form/NameInput';
 import EmailInput from './form/EmailInput';

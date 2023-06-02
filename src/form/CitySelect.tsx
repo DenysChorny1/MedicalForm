@@ -61,7 +61,12 @@ const CitySelect: React.FC<CitySelectProps> = ({ control, cityDoctorId, onCityCh
   return (
     <>
       <select
-        {...control.register('city', { required: 'City is required!' })}
+        {...control.register('city', { required: 'City is required!',
+        pattern: {
+          value: /^[^\d]+$/,
+          message: 'City is required!',
+        },
+      })}
         value={defaultValue}
         defaultValue={defaultValue}
         onChange={handleValueChange}

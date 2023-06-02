@@ -82,7 +82,6 @@ const DoctorSpecialty: React.FC<DoctorSpecialtyProps> = ({
       <select {...control.register('specialty', { required: false })} 
         value={defaultValue}
         onChange={handleIdChange} onClick={handleSelectClick}>
-        {/* <option value="">Select Specialty</option> */}
         {filteredSpecialties.map((specialty) => (
           <option key={specialty.id} value={specialty.name}>
             {specialty.name}

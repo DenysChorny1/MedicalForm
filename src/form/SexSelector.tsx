@@ -1,5 +1,5 @@
 import React from 'react';
-import { Control, useFormState, useController } from 'react-hook-form';
+import { Control, useFormState } from 'react-hook-form';
 
 interface SexSelectorProps {
   control: Control<any>;
