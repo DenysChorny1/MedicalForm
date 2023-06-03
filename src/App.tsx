@@ -8,7 +8,7 @@ import BirthdayDate from './form/BirthdayDate';
 import SexSelector from './form/SexSelector';
 import DoctorSpecialty from './form/DoctorSpecialty';
 import DoctorSelect from './form/DoctorSelect';
-import './app.css';
+import './App.css';
 
 
 const App: React.FC = () => {
