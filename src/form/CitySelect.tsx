@@ -44,7 +44,7 @@ const CitySelect: React.FC<CitySelectProps> = ({ control, cityDoctorId, onCityCh
     if (cityDoctorId === 0) {
       setDefaultValue('');
     }
-  }, [cityDoctorId]);
+  }, [cityDoctorId, onSelect]);
 
   const handleValueChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = event.target.value;

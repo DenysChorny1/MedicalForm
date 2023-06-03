@@ -63,7 +63,7 @@ const DoctorSpecialty: React.FC<DoctorSpecialtyProps> = ({
     if(specialityDoctorId === 0){
         setDefaultValue('')
       }
-  }, [specialityDoctorId]);
+  }, [specialityDoctorId, onSelect]);
 
   const filteredSpecialties = specialties.filter(
     (specialty) =>
