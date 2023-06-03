@@ -79,7 +79,9 @@ const DoctorSpecialty: React.FC<DoctorSpecialtyProps> = ({
 
   return (
     <div>
-      <select {...control.register('specialty', { required: false })} 
+      <select {...control.register('specialty', { required: false,
+      
+    })} 
         value={defaultValue}
         onChange={handleIdChange} onClick={handleSelectClick}>
         {filteredSpecialties.map((specialty) => (
