@@ -1,12 +1,11 @@
 import React from 'react';
-import { Control, useFormState } from 'react-hook-form';
+import { Control } from 'react-hook-form';
 
 interface EmailInputProps {
   control: Control<any>;
 }
 
 const EmailInput: React.FC<EmailInputProps> = ({ control }) => {
-  const { errors } = useFormState({ control });
 
   return (
     <div>

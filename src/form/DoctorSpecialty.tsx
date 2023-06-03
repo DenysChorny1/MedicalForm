@@ -28,9 +28,6 @@ const DoctorSpecialty: React.FC<DoctorSpecialtyProps> = ({
   const [defaultValue, setDefaultValue] = useState<string | undefined>(undefined);
   const { errors } = useFormState({ control });
 
-  useEffect(()=>{
-    
-  },[])
   const handleIdChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = event.target.value;
     const selectedSpecialty = specialties.find((specialty) => specialty.name === selectedValue);
